@@ -1,4 +1,4 @@
-#
+
 #  Be sure to run `pod spec lint EaseUI.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
@@ -154,7 +154,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "${SRCROOT}/EaseUI/EaseMobSDK/include/**", "LIBRARY_SEARCH_PATHS" => "${PODS_ROOT}/EaseUI/EaseMobSDK/lib/**" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SRCROOT)/EaseUI/EaseMobSDK/include/**", "LIBRARY_SEARCH_PATHS" => "${PODS_ROOT}/EaseUI/EaseMobSDK/lib/**" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
