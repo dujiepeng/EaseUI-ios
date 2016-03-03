@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EaseUI"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A short description of EaseUI."
 
   # This description is used to generate tags and improve search results.
@@ -143,7 +143,7 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-    s.libraries = "EaseMobClientSDKLite", "opencore-amrwb", "opencore-amrnb"
+  s.libraries = "EaseMobClientSDKLite", "opencore-amrwb", "opencore-amrnb"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -154,7 +154,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/EaseUI/EaseUI/EaseMobSDK/include/**", "LIBRARY_SEARCH_PATHS" => "${PODS_ROOT}/EaseUI/EaseMobSDK/lib/**" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/EaseUI/EaseUI/EaseMobSDK/include/**", "LIBRARY_SEARCH_PATHS" => "${PODS_ROOT}/EaseUI/EaseUI/**" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
