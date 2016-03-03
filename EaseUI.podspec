@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EaseUI"
-  s.version      = "0.0.5"
+  s.version      = "0.0.7"
   s.summary      = "A short description of EaseUI."
 
   # This description is used to generate tags and improve search results.
@@ -101,7 +101,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/comicool/EaseUI-ios.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/comicool/EaseUI-ios.git", :tag => "0.0.7" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -112,7 +112,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "EaseUI/**/*.{h,m}"
+  s.source_files  = "EaseUI/**/*.{h,m,a}"
   #s.exclude_files = "Classes/Exclude"
 
   #s.public_header_files = "EaseUI/**/*.h"
@@ -154,7 +154,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/EaseUI/EaseUI/EaseMobSDK/include/**", "LIBRARY_SEARCH_PATHS" => "$(inherited)" "${PODS_ROOT}/EaseUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb" "${PODS_ROOT}/EaseUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/EaseUI/EaseUI/EaseMobSDK/include/**"', "LIBRARY_SEARCH_PATHS" => '"${PODS_ROOT}/EaseUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb"'  '"${PODS_ROOT}/EaseUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb"' }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
