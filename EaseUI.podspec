@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EaseUI"
-  s.version      = "0.0.16"
+  s.version      = "0.0.17"
   s.summary      = "A short description of EaseUI."
 
   # This description is used to generate tags and improve search results.
@@ -101,7 +101,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/comicool/EaseUI-ios.git", :tag => "0.0.16" }
+  s.source       = { :git => "https://github.com/comicool/EaseUI-ios.git", :tag => "0.0.17" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -145,7 +145,7 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.libraries = "sqlite3", "EaseMobClientSDKLite", "opencore-amrwb", "opencore-amrnb"
+  s.libraries = "sqlite3", "xml2", "EaseMobClientSDKLite", "opencore-amrwb", "opencore-amrnb"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
