@@ -16,11 +16,14 @@
 #define KNOTIFICATION_CALL @"callOutWithChatter"
 #define KNOTIFICATION_CALL_CLOSE @"callControllerClose"
 
+#define KNOTIFICATION_OFFLINE_MSG_CHANGED  @"offlineMessageChanged"
+
 @interface EaseSDKHelper : NSObject
 
 @property (nonatomic) BOOL isShowingimagePicker;
 @property (nonatomic, copy) NSString*  deviceInfo;
 @property (nonatomic, copy) NSString*  userDescription;
+@property (assign, nonatomic) NSInteger offlineMessageCount;
 
 + (instancetype)shareHelper;
 
@@ -83,6 +86,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
                             messageExt:(NSDictionary *)messageExt
                               progress:(id<IEMChatProgressDelegate>)progress;
 
+//genobili add on 2016-03-03 11.17
+//设置离线消息
+- (void)updateOfflineMeageCount:(NSInteger)count;
 
 #pragma mark - call
 

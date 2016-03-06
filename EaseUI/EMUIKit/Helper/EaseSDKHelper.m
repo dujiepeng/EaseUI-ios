@@ -392,4 +392,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     return retMessage;
 }
 
+- (void)updateOfflineMeageCount:(NSInteger)count {
+    self.offlineMessageCount = count;
+    [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_OFFLINE_MSG_CHANGED object:nil];
+}
+
 @end
