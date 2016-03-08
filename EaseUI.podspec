@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EaseUI"
-  s.version      = "0.0.19"
+  s.version      = "0.0.21"
   s.summary      = "A short description of EaseUI."
 
   # This description is used to generate tags and improve search results.
@@ -101,7 +101,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/comicool/EaseUI-ios.git", :tag => "0.0.19"}
+  s.source       = { :git => "https://github.com/comicool/EaseUI-ios.git", :tag => "0.0.21"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -112,7 +112,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "EaseUI/**/*.{h,m,a,mm}"
+  s.source_files  = "EaseUI/**/*.{h,m,mm}"
   #s.exclude_files = "Classes/Exclude"
 
   #s.public_header_files = "EaseUI/**/*.h"
@@ -132,7 +132,7 @@ Pod::Spec.new do |s|
   s.resources = "EaseUI/**/*.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
+  s.preserve_paths =  "EaseUI/**/*.a"
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
