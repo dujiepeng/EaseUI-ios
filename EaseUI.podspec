@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    It is a lib modified from  easemob easeui lib
                    DESC
 
-  s.homepage     = "http://www.easemob.com/services?utm_source=baidu-pp"
+  s.homepage     = "http://www.easemob.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
